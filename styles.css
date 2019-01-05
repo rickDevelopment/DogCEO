@@ -1,0 +1,38 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  width: 100%;
+}
+.main-heading{
+  font-size: 1.7em;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-content{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.add-dog-btn{
+  font-size: 1.5em;
+  min-width: 48px;
+  min-height: 48px;
+  text-transform: uppercase;
+  border-radius: 10%;
+  background-color: orange;
+  text-decoration-color: #333;
+}
+
+img{
+  width:400px;
+  border: white solid 2px;
+}
+ul.image-list {
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
