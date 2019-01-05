@@ -12,16 +12,16 @@ function addNewDoggo(){
     return processingPromise;
   })
   .then(function(processedResponse){
+    //get the image and add image to the image-list
+    const list = document.createElement('li')
+    list.className = 'image-list-item'
     const img = document.createElement('img');
     img.src = processedResponse.message;
     img.alt = "Cute dog";
-    imageList.appendChild(img)
+    list.appendChild(img);
+    imageList.appendChild(list);
   });
   console.log('This will log first')
 }
-  function addListItem(){
-    const list = document.createElement('li')
-    imageList.appendChild(list)
-  }
 
    addDog.addEventListener('click', addNewDoggo)
