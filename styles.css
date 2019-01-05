@@ -2,6 +2,9 @@ body{
   margin: 0;
   padding: 0;
 }
+ul{
+  list-style: none;
+}
 .container{
   width: 100%;
 }
@@ -29,10 +32,19 @@ body{
 
 img{
   width:400px;
-  border: white solid 2px;
+  height: 500px;
+  
 }
-ul.image-list {
+.image-list {
   display: flex;
   align-content: space-between;
   flex-wrap: wrap;
+  border: black 5px;
+}
+.image-list-item{
+  border: white solid;
+  text-decoration: none;
+  width: 400px;
+  height: 500px;
+
 }
